@@ -1,24 +1,41 @@
-import React from 'react'
-import "./navbar.css"
+import React from "react";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
     <div className="grid grid-cols-12 items-center justify-between font-sans">
-        <div className='col-span-4  text-gray-400 flex flex-col items-center justify-center'>
-            <img src="" alt="" />
-            <div className="text-4xl fredoka-texting pit">Fun Safari</div>
+      <div className="col-span-4  flex flex-col items-center justify-center">
+        <img src="" alt="" />
+        <div className="text-4xl text-white fredoka-texting pit">Fun Safari</div>
+      </div>
+      <div className="col-span-8  grid grid-cols-7 items-center justify-center cursor-pointer">
+        <div className="text-md text-center  active:translate-x-5 transition-transform duration-3000 hover:text-white  shadow-2xl ">
+          Service
         </div>
-        <div className='col-span-8  grid grid-cols-7 items-center justify-center '>
-            <div className='text-md text-center hover:text-yellow-100 '>Service</div>
-            <div className='text-md text-center   hover:text-yellow-100'>Destination</div>
-            <div className='text-md text-center  hover:text-yellow-100 '>Booking</div>
-            <div className='text-md text-center  hover:text-yellow-100'>Packages</div>
-            <div className='text-md text-center  hover:text-yellow-100 '>Testimonial</div>
-            <div className='text-md text-center  hover:text-yellow-100 '>Login</div>
-            <div className='text-md text-center hover:text-white border border-black py-2 px-2 rounded-xl hover:bg-gray-300'>Signup</div>
+        <div className="text-md text-center  active:translate-x-5 transition-transform duration-3000 hover:text-white  shadow-2xl">
+          Destination
         </div>
+        <div className="text-md text-center  active:translate-x-5 transition-transform duration-3000 hover:text-white  shadow-2xl ">
+          Booking
+        </div>
+        <div className="text-md text-center  active:translate-x-5 transition-transform duration-3000 hover:text-white  shadow-2xl">
+          Packages
+        </div>
+        <div className="text-md text-center  active:translate-x-5 transition-transform duration-3000 hover:text-white  shadow-2xl ">
+          Testimonial
+        </div>
+        <div className="border border-black rounded-lg flex justify-center items-center gap-1 py-2 shadow-xl hover:scale-105">
+          <div className="text-sm text-center  hover:text-white  shadow-2xl hover:scale-110 ">
+            Login
+          </div>
+          <p>{`/`}</p>
+          <div className="text-sm text-center  hover:text-white  shadow-2xl hover:scale-110">
+            SignUp
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
