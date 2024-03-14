@@ -1,9 +1,10 @@
 import Navbar from "@/components/navbar/Navbar";
+import Selections from "@/components/selections/Selections";
 
 export default function Home() {
   return (
-    <main className="h-[100vh]  aspect-auto relative">
-      <div>
+    <main className=" relative  h-[100vh]">
+      <div className="">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#0099ff"
@@ -12,11 +13,17 @@ export default function Home() {
           ></path>
         </svg>
       </div>
-      <div className="absolute top-[5rem] right-0">
-        <img src="/hero-img.png" />
+      <div className="absolute top-[5rem] right-0 ">
+        <img src="/hero-img.png" className="max-md:opacity-70" />
       </div>
-      <div className="absolute inset-0  p-6 h-[80vh] bg-[/next.svg]">
+      <div className="absolute inset-0  h-fit  p-3 sm:p-5 md:p-6 ">
         <Navbar />
+      </div>
+      <div className="absolute top-[25%] bg-pink-400 w-[70vw]  flex justify-start items-center px-3">
+        <Selections />
+      </div>
+      <div className="absolute bottom-[25%] bg-black w-[100vw]  flex justify-start items-center px-3">
+        <Selections />
       </div>
     </main>
   );
